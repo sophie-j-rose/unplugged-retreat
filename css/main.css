@@ -87,49 +87,49 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /***** GLOBAL STYLES *****/
+/***** GLOBAL STYLES *****/
 
-  html {
-    font-size: 16px;
-  }
-  
-   body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    color: #e2e3ed;
-  }
-  
-   .content-wrapper {
-    max-width: 1200px;
-    width: 90%;
-    margin: 50px 0;
-   }
+html {
+  font-size: 16px;
+}
 
-   h1 {
-    font-size: 36px;
-    line-height: 43px;
-    font-weight: 500;
-   }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
 
-   h2 {
-    font-size: 30px;
-    font-weight: 500;
-   }
+.content-wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 50px 0;
+}
 
-   h3,
-   h4 {
-    font-size: 18px;
-    font-weight: 500;
+h1 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 500;
+}
 
-   }
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
 
-   p {
-    font-size: 14px;
-    line-height: 18px;
-   }
+h3,
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+}
 
 
-   /***** HEADER STYLES *****/
+/***** HEADER STYLES *****/
 
 header {
   display: flex;
@@ -155,10 +155,10 @@ figure {
 }
 
 .header-divider {
-  height: 1px; 
-  width: 100%; 
-  background-color: #3a3a3a; 
-  margin: 10px 0 20px 0; 
+  height: 1px;
+  width: 100%;
+  background-color: #3a3a3a;
+  margin: 10px 0 20px 0;
 }
 
 nav {
@@ -192,7 +192,8 @@ nav ul li a {
 
 .hero-area {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  height: 500px;
 }
 
 .hero-area h1 {
@@ -268,7 +269,7 @@ aside .form input[type="button"] {
 }
 
 .features h2 {
-  margin:0 0 60px 0;
+  margin: 0 0 60px 0;
 }
 
 .features .features-items {
@@ -276,7 +277,7 @@ aside .form input[type="button"] {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  text-align: center; 
+  text-align: center;
 }
 
 .features article {
@@ -285,7 +286,7 @@ aside .form input[type="button"] {
 }
 
 .fontawesome-icon {
-  margin:0 0 40px 0;
+  margin: 0 0 40px 0;
 }
 
 .features-item-description {
@@ -335,7 +336,7 @@ reviews .content-wrapper {
 
 .mission .content-wrapper {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -365,7 +366,7 @@ reviews .content-wrapper {
   margin: 0;
 }
 
-.contact-content { 
+.contact-content {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -389,14 +390,16 @@ reviews .content-wrapper {
 
 .faq h2 {
   margin: 0 0 40px 0;
+  line-height: 30px;
 }
 
 .faq-content {
-  margin:0 0 50px 0;
+  margin: 0 0 50px 0;
 }
 
 .faq-content h4 {
   margin: 20px 0;
+  line-height: 24px;
 }
 
 .faq-content p {
@@ -411,7 +414,7 @@ footer {
   align-items: center;
   text-align: center;
   background-color: #202322;
-  
+
 }
 
 footer .content-wrapper {
@@ -423,9 +426,7 @@ footer .content-wrapper {
 
 }
 
-footer .footer-content {
-  
-}
+footer .footer-content {}
 
 footer .contact {
   display: flex;
@@ -567,16 +568,202 @@ footer .social-icons p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles */
+
+  /* General Styles */
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+
+  /* Header Styles */
+
+  header {
+    padding: 33px 0;
+
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  header figure {
+    justify-content: flex-start;
+
+  }
+
+  header nav {
+    width: 22%;
+  }
+
+
+  header nav ul {
+    justify-content: space-between;
+
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Main Styles */
+
+  .hero-area {
+    height: 600px;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    margin: 50px 0;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  aside .form input[type="button"] {
+    margin: 0;
+
+  }
+
+  /* Features */
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+
+  }
+
+  .features .features-item-description {
+    width: 58%;
+  }
+
+  /* Reviews */
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .reviews article .review-image {
+    width: 49%;
+  }
+
+  /*========= About Page =========*/
+
+  /* Mission */
+
+.mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+ .mission-content p {
+    width: 45%;
+  }
+
+  .map {
+    height: 350px;
+  }
+
+  /* Contact Section */
+
+  .contact-section .content-wrapper {
+    justify-content: flex-start;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+  
+  .contact-content {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-section h4 {
+    font-size: 24px;
+  }
+
+    /*========= FAQ Page =========*/
+
+    .faq .content-wrapper {
+      justify-content: space-between;
+    }
+
+    .faq-content {
+      flex-basis: 45%;
+    }
+
+    .faq h2 {
+      width: 100%;
+    }
+
+
+  /* Footer */
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  footer h4 {
+    font-size: 24px;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles */
 }
+
+
 
 /* ==========================================================================
    Print styles.
@@ -585,6 +772,7 @@ footer .social-icons p {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -652,4 +840,3 @@ footer .social-icons p {
     page-break-after: avoid;
   }
 }
-
