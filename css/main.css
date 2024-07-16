@@ -90,13 +90,62 @@ textarea {
 /***** GLOBAL STYLES *****/
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  text-align: left;
   color: #e2e3ed;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #e2e3ed;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-size: 1.875em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3,
+h4 {
+  font-size: 1.125em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -105,31 +154,8 @@ body {
   margin: 50px 0;
 }
 
-h1 {
-  font-size: 36px;
-  line-height: 43px;
-  font-weight: 500;
-}
 
-h2 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-h3,
-h4 {
-  font-size: 18px;
-  font-weight: 500;
-
-}
-
-p {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-
-/***** HEADER STYLES *****/
+/***** BASE HEADER - FOOTER STYLES *****/
 
 header {
   display: flex;
@@ -142,7 +168,7 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin: 0;
 }
 
@@ -161,7 +187,7 @@ figure {
   margin: 10px 0 20px 0;
 }
 
-nav {
+header nav {
   width: 60%;
   font-size: 18px;
   font-weight: bold;
@@ -169,7 +195,7 @@ nav {
   text-decoration: none;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
@@ -178,14 +204,82 @@ nav ul {
 
 }
 
-nav ul li {
+header nav ul li {
   list-style: none;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #e2e3ed;
+header nav ul li a {
   text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #202322;
+
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 55%;
+  margin: 50px 0 0 0;
+
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer h4 {
+  margin: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer .social h4 {
+  margin: 20px 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.copyright p {
+  margin: 0;
 }
 
 /***** MAIN STYLES *****/
@@ -405,81 +499,6 @@ reviews .content-wrapper {
 .faq-content p {
   margin: 0;
 }
-
-/***** FOOTER STYLES *****/
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #202322;
-
-}
-
-footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 55%;
-  margin: 50px 0 0 0;
-
-}
-
-footer .footer-content {}
-
-footer .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-footer .contact h4 {
-  margin: 20px 0;
-}
-
-footer .contact p {
-  margin: 0;
-}
-
-footer .social {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-footer .social h4 {
-  margin: 20px 0;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.copyright {
-  width: 100%;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.copyright p {
-  margin: 0;
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -579,7 +598,7 @@ footer .social-icons p {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 48px;
   }
 
@@ -730,6 +749,12 @@ footer .social-icons p {
       width: 100%;
     }
 
+    .faq h4,
+    .faq p {
+      font-size: 14px;
+      line-height: 15.75px;
+    }
+
 
   /* Footer */
 
@@ -749,6 +774,10 @@ footer .social-icons p {
     font-size: 24px;
   }
 
+  footer p {
+    line-height: 18px;
+  }
+
   footer .contact {
     margin-bottom: 0;
   }
@@ -766,6 +795,24 @@ footer .social-icons p {
 
   .content-wrapper {
     max-width: 960px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3,
+  h4 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   /* Header Styles */
@@ -810,6 +857,7 @@ footer .social-icons p {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 48px;
   }
   
   .map {
@@ -820,6 +868,14 @@ footer .social-icons p {
 
   .faq h2 {
     width: 100%;
+    font-size: 48px;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 18px;
+    line-height: 18px;
+
   }
 
 
