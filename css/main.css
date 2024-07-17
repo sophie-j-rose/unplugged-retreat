@@ -758,8 +758,8 @@ reviews .content-wrapper {
     width: 45%;
   }
 
-  .map {
-    height: 350px;
+  .map figure {
+    padding-bottom: 55%;
   }
 
   /* Contact Section */
@@ -911,8 +911,8 @@ reviews .content-wrapper {
     font-size: 48px;
   }
   
-  .map {
-    height: 450px;
+  .map figure {
+    padding-bottom: 47%;
   }
 
   /*========= FAQ Page =========*/
