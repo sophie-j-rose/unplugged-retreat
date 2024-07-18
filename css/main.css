@@ -817,6 +817,11 @@ reviews .content-wrapper {
     font-size: 24px;
   }
 
+  .general-info,
+  .chat {
+    width: 42%;
+  }
+
     /*========= FAQ Page =========*/
 
     .faq .content-wrapper {
@@ -952,6 +957,11 @@ reviews .content-wrapper {
   
   .map figure {
     padding-bottom: 47%;
+  }
+
+  .general-info,
+  .chat {
+    width: 35%;
   }
 
   /*========= FAQ Page =========*/
